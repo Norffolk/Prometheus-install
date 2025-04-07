@@ -41,9 +41,14 @@ sudo chown -R prometheus:prometheus /var/lib/prometheus
 ```
 
 **6- Now we will create a service file to prometheus:**
+
 ```
 sudo vi /etc/systemd/system/prometheus.service
+```
+
 and put the content:
+
+```
 [Unit]
 Description=Prometheus
 Wants=network-online.target
